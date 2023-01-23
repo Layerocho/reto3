@@ -253,6 +253,7 @@ loop.start(time, now=False) # initially delay by time
 #---------------------------------------------------------------------------# 
 StartTcpServer(context, identity=identity, address=("192.168.10.20", 502))
 
-
+import atexit
+atexit.register(lambda: GPIO.output(led, GPIO.LOW))
 
 
