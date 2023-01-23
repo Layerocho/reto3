@@ -251,7 +251,7 @@ loop.start(time, now=False) # initially delay by time
 #---------------------------------------------------------------------------# 
 # start the Modbus server
 #---------------------------------------------------------------------------# 
-StartTcpServer(context, identity=identity, address=("192.168.1.38", 502))
+StartTcpServer(context, identity=identity, address=("192.168.10.20", 502))
 
 
 
